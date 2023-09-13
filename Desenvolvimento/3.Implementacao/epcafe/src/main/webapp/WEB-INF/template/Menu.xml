@@ -1,0 +1,27 @@
+<!DOCTYPE xml>
+<menu>
+	<submenu label="Home"  icon="pi pi-home">
+		<grupo value="ADMINISTRATIVOS"></grupo>
+		<menuitem value="Home" outcome="/restricted/home/CafeHome.xhtml"></menuitem>		
+	</submenu>
+
+	<submenu label="Propriedade" icon="pi pi-folder-open">
+		<grupo value="GESTORES"></grupo>
+		<menuitem value="Unidades de Produção" outcome="/restricted/propriedade/PesquisaUnidade.xhtml"></menuitem>		
+	</submenu>
+	<submenu label="Insumo" icon="pi pi-folder-open">
+		<grupo value="GESTORES"></grupo>		
+		<menuitem value="Máquinas e Implementos" outcome="/restricted/insumo/PesquisaMaquina.xhtml"></menuitem>
+		<menuitem value="Fertilizantes e Defensivos" outcome="/restricted/insumo/PesquisaFertilizante.xhtml"></menuitem>		
+	</submenu>
+	
+	<submenu label="Despesa" icon="pi pi-folder-open">
+		<grupo value="GESTORES"></grupo>		
+		<menuitem value="Despesas Máquinas e Implementos" outcome="/restricted/despesa/LancarDespesaMaquina.xhtml"></menuitem>
+		<menuitem value="Despesas Fertilizantes e Defensivos" outcome="/restricted/despesa/LancarDespesaFertilizante.xhtml"></menuitem>
+		<submenu2 label="Relatório">
+			<menuitem2 value="Despesas de Máquinas" 
+				outcome="/restricted/despesa/RelatorioDespesaMaquina.xhtml"></menuitem2>
+		</submenu2>
+	</submenu>
+</menu>
